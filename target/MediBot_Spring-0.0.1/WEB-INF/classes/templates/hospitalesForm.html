@@ -15,7 +15,7 @@
 				<div class="card-header" ></div>
 				<div class="card-body">
 				<h3 th:if="ERROR!=null" th:text="${ERROR}" style="color:red"></h3>
-					<form th:action="@{/hospitales/insertar}" th:object="${producto}" method="POST">
+					<form th:action="@{/hospitales/insertar}" th:object="${hospitales}" method="POST">
 						<div class="form-group">
 							<label for="nombre">Nombre</label> 
 							<input type="text" class="form-control" th:field="*{nombre}" name="nombre">
