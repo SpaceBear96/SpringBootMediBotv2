@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.dae.spring.modelos.Hospitales;
 import com.dae.spring.servicios.HospitalesServicios;
@@ -27,11 +28,12 @@ public class HospitalesControlador{
 	HospitalesServicios hospitalesServicio;
 	
 	@RequestMapping("/listar")
-	public String listar(Model model) {
+	public ModelAndView listar() {
+		ModelAndView model = new ModelAndView("producto_Lista");
 		List<Hospitales> hospitales = hospitalesServicio.listar();
-		model.addAttribute("hospitales",hospitales);
-		model.addAttribute("titulo","Lista de Hospitales");
-		return "hospitalesListar";
+		model.addObject("hospitales",hospitales);
+		model.addObject("titulo","Lista de Hospitales");
+		return model;
 	}
 	
 	@RequestMapping("/form")

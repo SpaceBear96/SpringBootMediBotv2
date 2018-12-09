@@ -1,6 +1,9 @@
 C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\ServletInitializer.java
+C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\modelos\Enfermedades.java
 C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\controladores\HospitalesControlador.java
 C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\MediBotSpringApplication.java
 C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\modelos\Hospitales.java
 C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\repositorio\HospitalesRepositorio.java
+C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\servicios\EnfermedadesServicio.java
 C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\servicios\HospitalesServicios.java
+C:\Users\junio\Documents\EclipseWorkspace\MediBot_Spring\src\main\java\com\dae\spring\repositorio\EnfermedadesRepositorio.java
