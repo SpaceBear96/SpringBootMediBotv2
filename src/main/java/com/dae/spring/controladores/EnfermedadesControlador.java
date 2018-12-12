@@ -58,7 +58,6 @@ public class EnfermedadesControlador {
 			model.addAttribute("ERROR","Error al enviar registro");
 			enfermedades = new Enfermedades();
 			model.addAttribute("enfermedades",enfermedades);
-			model.addAttribute("btn","Agregar Hospital");
 			return "enfermedad_Form";
 		}else {
 			enfermedadesServicio.guardar(enfermedades);
@@ -66,7 +65,7 @@ public class EnfermedadesControlador {
 		}
 	}
 	
-	@RequestMapping("/eliminar/{id}")
+	@RequestMapping("/delete/{id}")
 	public String eliminar(@PathVariable("id") Long id) {
 		enfermedadesServicio.eliminar(id);
 		return "redirect:/enfermedades/listar";
