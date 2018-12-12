@@ -16,7 +16,7 @@
 	<div class="row">
 		<c:forEach var="enfer" items="${enfermedad}">
 			<div class="col-sm-5 col-md-4"
-				style="border: 1px; float: rigth; background-color: rgb(246, 246, 246, 0.5); border-radius: 5%; margin-left: 3%;">
+				style="border: 1px; float: rigth; background-color: rgb(246, 246, 246, 0.5); border-radius: 5%; margin-left: 3%;margin-bottom: 2%">
 				<div class="thumbnail">
 					<div class="caption" style="margin: 3%;height: 110px;">
 						<h4>${enfer.nombre}</h4>
