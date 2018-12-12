@@ -57,6 +57,8 @@ public class HospitalesControlador{
 	
 	@RequestMapping("/form/{id}")
 	public String actualizar (@PathVariable("id") Long id,Model model) {
+		List<Distritos> distritos = distritoServicio.listado();
+		model.addAttribute("dsitrito",distritos);
 		model.addAttribute("hospitales",hospitalesServicio.buscarId(id));
 		return "hospital_Form";
 	}
@@ -74,7 +76,6 @@ public class HospitalesControlador{
 			model.addAttribute("ERROR","Error al enviar registro");
 			hospitales = new Hospitales();
 			model.addAttribute("hospitales",hospitales);
-			model.addAttribute("btn","Agregar Hospital");
 			return "hospitales_Form";
 		}else {
 			hospitalesServicio.guardar(hospitales);

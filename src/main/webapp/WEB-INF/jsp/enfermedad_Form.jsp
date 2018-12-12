@@ -11,7 +11,7 @@
 <body>
 	<%@ include file="/WEB-INF/layout/header.jsp"%>
 
-	<form method="post" action="/hospitales/insertar" class="container">
+	<form method="post" action="/enfermedades/insertar" class="container">
 		<div class="form-group">
 			<label for="nombre">Nombre</label> <input type="text"
 				class="form-control" value="${enfermedades.nombre}" name="nombre">
