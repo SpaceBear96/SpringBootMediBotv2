@@ -21,6 +21,7 @@ public class Enfermedades {
 	private String nombre;
 	@Column(name="descripcion")
 	private String descripcion;
+	
 	public long getId() {
 		return id;
 	}

@@ -10,7 +10,7 @@ import com.dae.spring.modelos.Hospitales;
 @Repository
 public interface HospitalesRepositorio extends JpaRepository<Hospitales, Serializable>{
 
-	public abstract Hospitales findById(Long id);
+	public abstract Hospitales findById(long id);
 	public abstract Hospitales findByNombre(String producto);
 
 }

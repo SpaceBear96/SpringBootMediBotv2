@@ -21,6 +21,11 @@ public class Hospitales {
 	private String nombre;
 	@Column(name="c_distrito")
 	private String distrito;
+	@Column(name="latitud")
+	private String latitud;
+	@Column(name="longitud")
+	private String longitud;
+	
 	public long getId() {
 		return id;
 	}
@@ -39,11 +44,26 @@ public class Hospitales {
 	public void setDistrito(String distrito) {
 		this.distrito = distrito;
 	}
-	public Hospitales(long id, String nombre, String distrito) {
+	
+	public String getLatitud() {
+		return latitud;
+	}
+	public void setLatitud(String latitud) {
+		this.latitud = latitud;
+	}
+	public String getLongitud() {
+		return longitud;
+	}
+	public void setLongitud(String longitud) {
+		this.longitud = longitud;
+	}
+	public Hospitales(long id, String nombre, String distrito,String latitud,String longitud) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.distrito = distrito;
+		this.longitud = longitud;
+		this.latitud = latitud;
 	}
 	public Hospitales() {
 		super();
