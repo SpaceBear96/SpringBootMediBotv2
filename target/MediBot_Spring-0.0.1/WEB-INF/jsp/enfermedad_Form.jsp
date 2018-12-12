@@ -18,7 +18,7 @@
 		</div>
 		<div class="form-group">
 			<label for="descripcion">Descripcion</label> <input type="text"
-				class="form-control" value="${enfermedades.descripcion}" name="latitud">
+				class="form-control" value="${enfermedades.descripcion}" name="descripcion">
 		</div>
 		<input type="submit" value="Insertar" class="btn btn-primary">
 	</form>
